@@ -36,6 +36,12 @@ git push origin master  //将修改提交到远端仓库
 git remote add origin <server>  //添加远端仓库
 git branch -a  //查询远程分支
 git chenckout -b notes origin/notes   //获取远端分支
+git config user.name "Kimi Athos"  //配置用户名
+git add filename  //加入修改
+git commit -s -m "Add info into notes.md"  //提交修改
+git config user.email "sunx_2003@163.com"  //配置邮件地址
+git push  //推送到远端分支
+
 ```
 
 
