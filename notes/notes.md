@@ -35,6 +35,7 @@ netstat -nlap|grep 3573
 git push origin master  //将修改提交到远端仓库
 git remote add origin <server>  //添加远端仓库
 git branch -a  //查询远程分支
+git chenckout -b notes origin/notes   //获取远端分支
 ```
 
 
