@@ -44,4 +44,7 @@ git push  //推送到远端分支
 
 ```
 
-
+## ubuntu
+```
+gsettings set com.canonical.Unity.Launcher launcher-position Bottom  //任务栏底部
+```
