@@ -48,3 +48,11 @@ git push  //推送到远端分支
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom  //任务栏底部
 ```
+
+## maven
+```
+mvn archetype:generate  //生产maven工程
+mvn install -Dmaven.test.skip = true  //-D是java的功能，设置一个java系统属性
+```
+
+
