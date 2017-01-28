@@ -1,5 +1,10 @@
 ## Linux
 
+```
+// 把图缩放，最大边长2000像素，压缩比75%
+convert -resize 2000 -quality 75% DSC_5795.JPG min_DSC_5795.JPG
+```
+
 #### 安装软件
 
 我们在使用Ubuntu安装程序时经常会遇到添加软件源的操作，最常见的是ppa软件源。ppa是Ubuntu Launchpad网站提供的一项服务，允许个人用户作为apt源供其他用户下载和更新。
@@ -27,6 +32,11 @@ sudo alien flash-plugin-11.2.202.621-release.i386.rpm
 ```
 netstat -nlap|grep 3573
 ```
+
+```
+for ((i=1;i<=41;i++))do echo filename$i.txt;done | xargs -i cat {} >> mynew.txt  //按顺序合并目录中的文件
+```
+
 
 ## Git
 
