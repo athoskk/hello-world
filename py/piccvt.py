@@ -30,7 +30,7 @@ if __name__ == "__main__":
 
     fileListLen = len(src)
     for i in range(fileListLen):
-        commandStr = "convert -resize 1920 -quality 70% " + src[i] + " " + dst[i]
+        commandStr = "convert -resize 1920 -quality 85% " + src[i] + " " + dst[i]
         print commandStr
         os.system(commandStr)
 
