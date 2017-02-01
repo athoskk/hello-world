@@ -77,3 +77,10 @@ locate ntfs-3g              //check the ntfs-3g is installed
 sudo ntfsfix /dev/sda6      //fix the error disk partation
 ```
 
+Fix the software-center exit:
+```
+sudo apt-get update
+sudo apt-get dist-upgrade
+sudo apt-get install --reinstall software-center
+```
+
