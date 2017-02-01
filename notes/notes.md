@@ -65,4 +65,15 @@ mvn archetype:generate  //生产maven工程
 mvn install -Dmaven.test.skip = true  //-D是java的功能，设置一个java系统属性
 ```
 
+## vim
+set the vim for python:
+http://www.linuxidc.com/Linux/2017-01/139565.htm
+
+## FAQ
+解决挂载NTFS分区失败
+```
+sudo apt-get install ntfs-3g //install ntfs-3g
+locate ntfs-3g              //check the ntfs-3g is installed
+sudo ntfsfix /dev/sda6      //fix the error disk partation
+```
 
