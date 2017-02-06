@@ -68,6 +68,7 @@ mvn install -Dmaven.test.skip = true  //-D是java的功能，设置一个java系
 ## vim
 set the vim for python:
 http://www.linuxidc.com/Linux/2017-01/139565.htm
+http://www.linuxidc.com/Linux/2016-06/132262.htm
 
 ## FAQ
 解决挂载NTFS分区失败
