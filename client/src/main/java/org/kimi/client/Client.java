@@ -20,8 +20,14 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
 
-        String host = args[0];
-        int port = Integer.parseInt(args[1]);
+        int port = PORT;
+        String host = HOST; 
+
+    	if (args.length > 0) {
+            port = Integer.parseInt(args[1]);
+            host = args[0];
+        }
+        
         EventLoopGroup workerGroup = new NioEventLoopGroup();
 
         try {
