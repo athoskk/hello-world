@@ -57,6 +57,9 @@ git push  //推送到远端分支
 ## ubuntu
 ```
 gsettings set com.canonical.Unity.Launcher launcher-position Bottom  //任务栏底部
+//点击任务栏最小化窗口
+gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshell/ launcher-minimize-window true
+
 ```
 
 ## maven
