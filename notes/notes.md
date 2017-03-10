@@ -67,6 +67,14 @@ gsettings set org.compiz.unityshell:/org/compiz/profiles/unity/plugins/unityshel
 mvn archetype:generate  //生产maven工程
 mvn install -Dmaven.test.skip = true  //-D是java的功能，设置一个java系统属性
 ```
+maven in action:
+http://hzbook.group.iteye.com/group/wiki/2872-Maven-in-action/
+
+## java
+```
+jar vtf target/mvntest-1.0-SNAPSHOT.jar //查看jar包内容
+java -jar target/mvntest-1.0-SNAPSHOT.jar   //执行jar包，jar包中要设置main-class
+```
 
 ## vim
 set the vim for python:
@@ -88,3 +96,6 @@ sudo apt-get dist-upgrade
 sudo apt-get install --reinstall software-center
 ```
 
+## IntelliJ IDEA
+IntelliJ IDEA使用教程
+http://www.phperz.com/article/15/0923/159067.html
