@@ -39,9 +39,9 @@ for ((i=1;i<=41;i++))do echo filename$i.txt;done | xargs -i cat {} >> mynew.txt 
 ```
 
 ### vim
-set the vim for python:
-http://www.linuxidc.com/Linux/2017-01/139565.htm
-http://www.linuxidc.com/Linux/2016-06/132262.htm
+[set the vim for python](http://www.linuxidc.com/Linux/2017-01/139565.htm)
+
+[vim for C++](http://www.linuxidc.com/Linux/2016-06/132262.htm)
 
 ## Git
 ```
@@ -88,9 +88,9 @@ java -jar target/mvntest-1.0-SNAPSHOT.jar   //执行jar包，jar包中要设置m
 mvn archetype:generate  //生产maven工程
 mvn install -Dmaven.test.skip = true  //-D是java的功能，设置一个java系统属性
 ```
-maven in action:
-http://hzbook.group.iteye.com/group/wiki/2872-Maven-in-action/
+[maven in action](http://hzbook.group.iteye.com/group/wiki/2872-Maven-in-action/)
+
+在pom中增加plugin maven-shade-plugin，可以配置jar包的mainclass。main class带有main函数，可以通过java -jar命令直接执行jar包。
 
 ### IntelliJ IDEA
-IntelliJ IDEA使用教程
-http://www.phperz.com/article/15/0923/159067.html
+[IntelliJ IDEA使用教程](http://www.phperz.com/article/15/0923/159067.html)
