@@ -42,6 +42,13 @@ for ((i=1;i<=41;i++))do echo filename$i.txt;done | xargs -i cat {} >> mynew.txt 
 [set the vim for python](http://www.linuxidc.com/Linux/2017-01/139565.htm)
 
 [vim for C++](http://www.linuxidc.com/Linux/2016-06/132262.htm)
+[ctags](http://www.cnblogs.com/zhangsf/archive/2013/06/13/3134409.html)
+```
+ctags -R *
+Ctrl＋］  跳到当前光标下单词的标签
+Ctrl＋O  返回上一个标签
+Ctrl＋T  返回上一个标签
+```
 
 ## Git
 ```
