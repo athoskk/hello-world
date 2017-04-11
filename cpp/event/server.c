@@ -81,7 +81,8 @@ int main(int argc, char **argv)
                 }
 
                 char ip[20];
-                printf("new connection[%s:%d]\n", inet_ntop(AF_INET, &client_addr.sin_addr, ip, sizeof(ip)), ntohs(client_addr.sin_port));
+                printf("new connection[%s:%d]\n", inet_ntop(AF_INET,
+                    &client_addr.sin_addr, ip, sizeof(ip)), ntohs(client_addr.sin_port));
 
                 event.events = EPOLLIN | EPOLLET;
                 event.data.fd = client_fd;

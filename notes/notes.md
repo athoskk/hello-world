@@ -42,6 +42,7 @@ for ((i=1;i<=41;i++))do echo filename$i.txt;done | xargs -i cat {} >> mynew.txt 
 [set the vim for python](http://www.linuxidc.com/Linux/2017-01/139565.htm)
 
 [vim for C++](http://www.linuxidc.com/Linux/2016-06/132262.htm)
+
 [ctags](http://www.cnblogs.com/zhangsf/archive/2013/06/13/3134409.html)
 ```
 ctags -R *
@@ -62,6 +63,12 @@ git commit -s -m "Add info into notes.md"  //提交修改
 git config user.email "sunx_2003@163.com"  //配置邮件地址
 git push  //推送到远端分支
 git diff origin/master  //比较与远端master分支的差异
+```
+git获取远程远程分支
+```
+git fetch origin notes  //把远程分之获取到本地
+git log -p notes.. origin/notes   //查看本地分支与远程分支的差异
+git merge origin/notes    //远程分支合并到本地
 ```
 
 ## ubuntu
