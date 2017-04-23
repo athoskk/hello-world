@@ -108,3 +108,13 @@ mvn install -Dmaven.test.skip = true  //-D是java的功能，设置一个java系
 
 ### IntelliJ IDEA
 [IntelliJ IDEA使用教程](http://www.phperz.com/article/15/0923/159067.html)
+
+## docker
+```
+docker images  //查询镜像
+docker rm kimi  //删除容器
+docker ps -a  //查询容器
+docker commit 3dddc5237797 kimiubuntu  // 提交对容器做的修改，kimiubuntu为镜像名称
+docker run -it --name kimi kimiubuntu  // 启动一个容器
+```
+
