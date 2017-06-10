@@ -49,6 +49,7 @@ ctags -R *
 Ctrl＋］  跳到当前光标下单词的标签
 Ctrl＋O  返回上一个标签
 Ctrl＋T  返回上一个标签
+$	跳到行尾
 ```
 
 ## Git
@@ -115,6 +116,10 @@ docker images  //查询镜像
 docker rm kimi  //删除容器
 docker ps -a  //查询容器
 docker commit 3dddc5237797 kimiubuntu  // 提交对容器做的修改，kimiubuntu为镜像名称
-docker run -it --name kimi kimiubuntu  // 启动一个容器
+docker run -it --name kimi kimiubuntu /bin/bash // 启动一个容器
+docker export 2a12b907f2b5 > kimiubuntu.tar  //将容器倒出
+cat kimiubuntu.tar | docker import - kimi/ubuntu:1.0  // 倒入镜像
+docker restart kimi
+docker attach kimi
 ```
 
