@@ -53,6 +53,7 @@ $	跳到行尾
 ```
 
 ## Git
+基本操作
 ```
 git push origin master  //将修改提交到远端仓库
 git remote add origin <server>  //添加远端仓库
@@ -65,11 +66,34 @@ git config user.email "sunx_2003@163.com"  //配置邮件地址
 git push  //推送到远端分支
 git diff origin/master  //比较与远端master分支的差异
 ```
+clone仓库
+```
+git clone https://github.com/apache/spark -b branch-2.1		//clone远端库并制定分支
+git clone https://github.com/apache/spark	//clone远端库
+git fetch origin branch:branch 		//获取分支
+```
+
 git获取远程远程分支
 ```
 git fetch origin notes  //把远程分之获取到本地
 git log -p notes.. origin/notes   //查看本地分支与远程分支的差异
 git merge origin/notes    //远程分支合并到本地
+git remote -v // 查询远端主机配置
+git remote add host root@hostname:/home/kimi/repos/spark    // 配置远端库
+git remote add host https://github.com/athoskk/hello-world.git
+git clone https://github.com/athoskk/hello-world.git
+git fetch origin noets:notes    // 获取远端分支
+git checkout notes
+git checkout master
+git merge notes --squash
+git commit -a -author "sunxiao"
+git push origin master:master
+```
+
+git 配置
+```
+git config --global core.pager "less -r"
+git config --global user.email sunx_2003@163.com
 ```
 
 ## ubuntu
@@ -122,4 +146,3 @@ cat kimiubuntu.tar | docker import - kimi/ubuntu:1.0  // 倒入镜像
 docker restart kimi
 docker attach kimi
 ```
-
