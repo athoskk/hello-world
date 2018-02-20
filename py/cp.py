@@ -31,7 +31,7 @@ if __name__ == "__main__":
 		print u'Input a directory!'
 		print u'cp.py SourceDir ObjectDir'
 	else:
-		obj = 1
+		obj = 0
 		directory = sys.argv[1]
 		fileList = [os.path.normcase(f)
                 for f in os.listdir(directory)]
