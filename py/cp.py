@@ -46,4 +46,5 @@ if __name__ == "__main__":
 				os.mkdir(dir)
 				listDirectory(file, dir, [".jpg"])
 				listDirectory(file, dir, [".jpeg"])
-				
+				listDirectory(file, dir, [".JPG"])
+				listDirectory(file, dir, [".png"])

@@ -145,4 +145,8 @@ docker export 2a12b907f2b5 > kimiubuntu.tar  //将容器倒出
 cat kimiubuntu.tar | docker import - kimi/ubuntu:1.0  // 倒入镜像
 docker restart kimi
 docker attach kimi
+docker run -d -p 7778:7778 --name kimi-server kimiubuntu /root/repos/cpp-test/event/server //后台启动容器，映射端口
+docker run -it -h kimi-shell --name kimi-shell -p 7778:7778 kimiubuntu /bin/bash 			// 交互式启动容器，映射端口
+docker rm -f kimi-server
+docker stop kimi-server
 ```

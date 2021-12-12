@@ -13,6 +13,8 @@
 ## cmake
 [操作指导](https://www.ibm.com/developerworks/cn/linux/l-cn-cmake/)
 
+cmake . // 生成Makefile文件
+
 ## effective cpp
 * C++ 不是使用一套规则的单一语言，而是 federation of four sublanguages（四种子语言的联合体），每一种都有各自的规则。在头脑中保持这些 sublanguages（子语言），你会发现对 C++ 的理解会容易得多。
 * 在头文件中定义一个 constant char*-based string（基于 char* 的字符串常量）时，你必须写两次 const：
